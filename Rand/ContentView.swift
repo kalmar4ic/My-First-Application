@@ -10,15 +10,23 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            
+            Button("Рандомить", action: {
+                
+                for _ in 0...5{
+                    var r = rand()
+                    print(r)
+                    
+                }
+            })
+        
+                .buttonStyle(.bordered)
+                .tint(.purple)
         }
-        .padding()
     }
 }
-
+    
 #Preview {
     ContentView()
 }
+
