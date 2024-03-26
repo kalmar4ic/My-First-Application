@@ -11,6 +11,8 @@
 		C7807A1B2BA5FFAA007E09AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7807A1A2BA5FFAA007E09AA /* ContentView.swift */; };
 		C7807A1D2BA5FFAC007E09AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7807A1C2BA5FFAC007E09AA /* Assets.xcassets */; };
 		C7807A202BA5FFAC007E09AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7807A1F2BA5FFAC007E09AA /* Preview Assets.xcassets */; };
+		C7807A2B2BA607BB007E09AA /* Rand func.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7807A2A2BA607BB007E09AA /* Rand func.swift */; };
+		C7DA0B442BB312B200A8EDA2 /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DA0B432BB312B200A8EDA2 /* Values.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C7807A1A2BA5FFAA007E09AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7807A1C2BA5FFAC007E09AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7807A1F2BA5FFAC007E09AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7807A2A2BA607BB007E09AA /* Rand func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rand func.swift"; sourceTree = "<group>"; };
+		C7DA0B432BB312B200A8EDA2 /* Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Values.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				C7807A182BA5FFAA007E09AA /* RandApp.swift */,
 				C7807A1A2BA5FFAA007E09AA /* ContentView.swift */,
+				C7807A2A2BA607BB007E09AA /* Rand func.swift */,
+				C7DA0B432BB312B200A8EDA2 /* Values.swift */,
 				C7807A1C2BA5FFAC007E09AA /* Assets.xcassets */,
 				C7807A1E2BA5FFAC007E09AA /* Preview Content */,
 			);
@@ -109,6 +115,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = C7807A0C2BA5FFAA007E09AA;
 			productRefGroup = C7807A162BA5FFAA007E09AA /* Products */;
@@ -138,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7807A1B2BA5FFAA007E09AA /* ContentView.swift in Sources */,
+				C7807A2B2BA607BB007E09AA /* Rand func.swift in Sources */,
 				C7807A192BA5FFAA007E09AA /* RandApp.swift in Sources */,
+				C7DA0B442BB312B200A8EDA2 /* Values.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +206,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
