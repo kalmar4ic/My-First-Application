@@ -9,30 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showAlert = false
+    @State private var textInput = ""
+    @State private var text = ""
     var body: some View {
         VStack {
             
-            Button("Рандомить", action: {
+            TextField("Введите проблему", text: $textInput)
+                .offset(y: -25)
+                .textFieldStyle(.roundedBorder)
+            
+            Button("Мне повезет", action: {
                 let choise = rand()
                 if choise == 1
                 {
-                    print(const.positive)
+                    text = const.positive
                     
                 } else if choise == 2
                 {
-                    print(const.negative)
+                    text = const.negative
                     
                 } else if choise == 3
                 {
-                    print(const.absolutely)
+                    text = const.absolutely
                     
                 } else if choise == 4
                 {
-                    print(const.badchance)
+                    text = const.badchance
                     
                 } else if choise == 5
                 {
-                    print(const.dontunderstand)
+                    text = const.dontunderstand
                 }
                 
                 showAlert = true
@@ -42,7 +48,7 @@ struct ContentView: View {
                 .tint(.purple)
             
                 .alert(isPresented: $showAlert) {
-                            Alert(title: Text("Предупреждение"), message: Text("Это предупреждение об ошибке"), dismissButton: .default(Text("OK")))
+                            Alert(title: Text(textInput), message: Text(text), dismissButton: .default(Text("OK")))
                         }
         }
     }
